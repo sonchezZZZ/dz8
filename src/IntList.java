@@ -2,7 +2,7 @@ public interface IntList {
     void add(int i);
 
     /**
-     * Insert element by index. All elements from the right will be shifted to right
+     *git remote add origin git@github.com:sonchezZZZ/dz8.git
      */
     void insert(int index, int value);
 

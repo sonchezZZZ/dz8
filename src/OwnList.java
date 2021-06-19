@@ -17,7 +17,8 @@ public class OwnList implements IntList {
 
     @Override
     public void insert(int index, int value) {
-        if(list[index] == null){
+        if(list[index] == 0){
+            list[index] = value;
 
         }
 
