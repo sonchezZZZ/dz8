@@ -2,7 +2,7 @@ public interface IntList {
     void add(int i);
 
     /**
-     *git remote add origin git@github.com:sonchezZZZ/dz8.git
+     * git remote add origin git@github.com:sonchezZZZ/dz8.git
      */
     void insert(int index, int value);
 
