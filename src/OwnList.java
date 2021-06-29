@@ -62,13 +62,11 @@ public class OwnList implements IntList {
     // или индекс, или нул возвращаем
     @Override
     public Integer getIndexByValue(int value) {
-        Integer index = -1;
+        Integer index = null;
         for (int i = 0; i <= top; i++) {
             if (value == list[i]) {
                 index = i;
                 break;
-            } else {
-                index = null;
             }
         }
 
@@ -81,6 +79,7 @@ public class OwnList implements IntList {
         for (int i = 0; i <= top; i++) {
             if (value == list[i]) {
                 result = true;
+                break;
             }
         }
         return result;
@@ -129,9 +128,7 @@ public class OwnList implements IntList {
     @Override
     public int[] toArray() {
         int[] array = new int[top + 1];
-        for (int i = 0; i <= top; i++) {
-            array[i] = list[i];
-        }
+        System.arraycopy(list, 0, array, 0, top + 1);
         return array;
     }
 
